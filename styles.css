@@ -74,8 +74,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8.5rem;
-    width: 8.5rem;
+    height: 8.6rem;
+    width: 8.6rem;
     border-radius: 50%;
     background-color: var(--background-color);
 }
@@ -85,8 +85,8 @@ main {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 7rem;
-    width: 7rem;
+    height: 7.2rem;
+    width: 7.2rem;
     border-radius: 50%;
     background-color: var(--background-color);
     box-shadow: 0 0 10px var(--hard-shadow);
