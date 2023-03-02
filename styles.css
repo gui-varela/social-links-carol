@@ -1,0 +1,157 @@
+:root {
+    --white: #f7f7f7;
+    --black: #090909;
+
+    --default-font: #747a7a;
+    --dark-blue: #344453;
+    --light-blue: #8bbfc7;
+    --border: #dde5e7;
+    --cta: #b47450;
+    
+    --background-color: #edf2f3;
+    --soft-shadow: #363e3f15;
+    --hard-shadow: #10384140;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    background-image: url('./assets/Captura\ de\ tela\ de\ 2023-03-01\ 18-07-48.png');
+    background-size: cover;
+    background-position-y: -9rem;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: var(--default-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    padding-top: 10rem;
+}
+
+#curve {
+    height: 5rem;
+    border-radius: 50% 50% 0 0;
+    background-color: var(--background-color);
+    transform: scaleX(2) scaleY(4) translateY(2rem);
+}
+
+main {
+    display: flex;
+    position: fixed;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--background-color);
+    height: calc(100% - 5rem);
+    z-index: 10px;
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-7rem);
+    margin: 0 2rem;
+}
+
+#avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    background-color: var(--background-color);
+}
+
+#avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px var(--hard-shadow);
+}
+
+#avatar img {
+    border: 1px solid var(--border);
+    height: 90%;
+    border-radius: 50%;
+}
+
+#content h1 {
+    font-family: 'Tenor Sans', sans-serif;
+    color: var(--dark-blue);
+}
+
+#links-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+    width: 100%;
+    max-width: 35rem;
+    padding: 0 1rem;
+}
+
+.link-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: var(--default-font);
+    background-color: var(--white);
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0 5px 20px var(--soft-shadow);
+}
+
+.disabled {
+    opacity: .7;
+    background-color: var(--white);
+    color: var(--default-font);
+    cursor: not-allowed;
+}
+
+.disabled span {
+    color: var(--cta);
+    opacity: 1;
+}
+
+#social {
+    margin: 1rem 0;
+}
+
+#social img {
+    height: 1.3rem;
+    margin: 0 .5rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: .8rem;
+    }
+
+    .link-card {
+        font-size: .9rem;
+    }
+}
