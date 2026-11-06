@@ -49,7 +49,7 @@ h2 {
   font-weight: 300;
 }
 
-.hero-copy p:not(.eyebrow):not(.lead):not(.cta-note) {
+.hero-copy p:not(.eyebrow):not(.lead) {
   color: var(--ink-soft);
   max-width: 52ch;
 }
@@ -145,7 +145,7 @@ h2 {
   align-content: center;
 }
 
-.cmt-copy p:not(.eyebrow):not(.lead):not(.cta-note) {
+.cmt-copy p:not(.eyebrow):not(.lead) {
   color: rgb(243 236 228 / 0.78);
   max-width: 52ch;
 }
@@ -343,8 +343,8 @@ h2 {
   grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 1.5rem;
+  gap: 1.25rem;
+  padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: #fff;
@@ -372,10 +372,10 @@ h2 {
 }
 
 .review-text {
-  font-family: var(--font-display);
-  font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.625rem);
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 0.89rem + 0.25vw, 1.0625rem);
   font-weight: 300;
-  line-height: 1.45;
+  line-height: 1.6;
   color: var(--navy);
 }
 
@@ -517,7 +517,7 @@ h2 {
 
 @media (min-width: 40rem) {
   .review-card {
-    padding: 3rem 3.5rem;
+    padding: 2.25rem 2.5rem;
   }
 }
 
@@ -563,7 +563,7 @@ h2 {
   font-weight: 300;
 }
 
-.about-copy p:not(.eyebrow):not(.lead):not(.cta-note) {
+.about-copy p:not(.eyebrow):not(.lead) {
   color: var(--ink-soft);
 }
 
