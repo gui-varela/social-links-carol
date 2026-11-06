@@ -71,17 +71,6 @@
   justify-items: start;
 }
 
-.cta-note {
-  max-width: 34ch;
-  font-size: 0.8125rem;
-  line-height: 1.55;
-  color: var(--ink-soft);
-}
-
-.on-dark .cta-note {
-  color: rgb(243 236 228 / 0.7);
-}
-
 /* Header */
 .site-header {
   position: sticky;
