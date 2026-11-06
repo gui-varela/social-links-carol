@@ -1,0 +1,31 @@
+{
+  "sample": true,
+  "updatedAt": "2026-01-01T00:00:00Z",
+  "placeName": "EXEMPLO",
+  "rating": 5,
+  "userRatingCount": 3,
+  "googleMapsUri": "https://share.google/rhQ1G3dLco5bFbjpc",
+  "reviews": [
+    {
+      "author": "Exemplo A.",
+      "photo": null,
+      "rating": 5,
+      "when": "há 1 mês",
+      "text": "[Texto de exemplo apenas para validar o layout. Substituído pelas avaliações reais do Google quando o script rodar.]"
+    },
+    {
+      "author": "Exemplo B.",
+      "photo": null,
+      "rating": 5,
+      "when": "há 3 meses",
+      "text": "[Texto de exemplo mais longo para testar quebra de linha e altura do cartão: aqui entraria um depoimento real de alguém contando como foi o acompanhamento, os desafios da rotina e o que mudou ao longo do processo. Esse trecho serve apenas para validar a tipografia e o espaçamento.]"
+    },
+    {
+      "author": "Exemplo C.",
+      "photo": null,
+      "rating": 5,
+      "when": "há 5 meses",
+      "text": "[Terceiro texto de exemplo.]"
+    }
+  ]
+}
