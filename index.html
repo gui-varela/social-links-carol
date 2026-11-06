@@ -1,62 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Sora:wght@200;400;700&family=Tenor+Sans&display=swap" rel="stylesheet">
-    <title>Nutri Carol Varela - Links</title>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carol Varela | Nutricionista — Acompanhamento Nutricional</title>
+  <meta name="description" content="Acompanhamento nutricional personalizado com Carol Varela, nutricionista esportiva e estética com abordagem comportamental. Atendimento presencial na Barra Olímpica (RJ) e on-line.">
+  <meta name="theme-color" content="#304556">
+  <link rel="canonical" href="https://carolvarela.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Carol Varela — Nutricionista">
+  <meta property="og:title" content="Carol Varela | Nutricionista — Acompanhamento Nutricional">
+  <meta property="og:description" content="A sua mudança começa aqui. Acompanhamento nutricional com escuta de verdade, estratégia e ajustes contínuos.">
+  <meta property="og:url" content="https://carolvarela.com.br/">
+  <meta property="og:image" content="https://carolvarela.com.br/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/black-mango-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalBusiness",
+        "name": "Carol Varela — Nutricionista",
+        "url": "https://carolvarela.com.br/",
+        "image": "https://carolvarela.com.br/assets/img/og.jpg",
+        "telephone": "+5521964226923",
+        "description": "Nutricionista esportiva e estética com abordagem comportamental. Atendimento presencial na Barra Olímpica (Rio de Janeiro) e on-line.",
+        "areaServed": "BR",
+        "sameAs": [
+          "https://www.instagram.com/nutricarolvarela",
+          "https://www.youtube.com/@nutricarolvarela"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O atendimento é presencial ou on-line?",
+            "acceptedAnswer": { "@type": "Answer", "text": "As duas modalidades estão disponíveis. Os atendimentos presenciais acontecem na Barra Olímpica, no Rio de Janeiro, e o acompanhamento on-line permite que você seja atendido de onde estiver." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona a avaliação física?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A avaliação física é feita tanto na consulta presencial, quanto on-line. Na modalidade presencial, fazemos bioimpedância, dobras cutâneas, medidas e fotos. Na modalidade on-line, fazemos um escaneamento corporal pelo Shaped, além de medidas e fotos." }
+          },
+          {
+            "@type": "Question",
+            "name": "Vou ter acompanhamento entre as consultas?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nos planos de acompanhamento, os check-ins permitem observar sua evolução, identificar dificuldades e orientar ajustes quando necessário. As condições dependem da modalidade escolhida." }
+          },
+          {
+            "@type": "Question",
+            "name": "Você atende por plano de saúde?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Para oferecer uma consulta completa, individualizada e com o tempo e a atenção que cada paciente merece, meus atendimentos são particulares, sem atendimento direto por convênios. É possível solicitar recibo e documentação pertinente para avaliar o reembolso com a sua operadora, conforme as regras do seu plano." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como posso saber qual modalidade é mais adequada para mim?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Basta entrar em contato pelo WhatsApp. Conversaremos sobre seu objetivo e apresentarei as opções de atendimento, funcionamento e investimento." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div id="container">
-        <div id="curve"></div>
-        <main>
-            <div id="content">
-                <div id="avatar-container">
-                    <div id="avatar">
-                        <img src="./assets/avatar.png" alt="" srcset="">
-                    </div>
-                </div>
-                <h1>Carol Varela</h1>
-                <div id="social">
-                    <a target="_blank" href="https://wa.me/5521964226923?text=Ol%c3%a1!%20Gostaria%20de%20mais%20informa%c3%a7%c3%b5es%20sobre%20o%20acompanhamento%20nutricional!%20(%3a">
-                        <img src="./assets/icons/whatsapp.svg" alt="" srcset="">
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/nutricarolvarela/">
-                        <img src="./assets/icons/instagram.svg" alt="" srcset="">
-                    </a>
-                    <a target="_blank" href="https://www.tiktok.com/@nutricarolvarela">
-                        <img src="./assets/icons/tik-tok.svg" alt="" srcset="">
-                    </a>
-                    <a target="_blank" href="https://m.youtube.com/@nutricarolvarela">
-                        <img src="./assets/icons/youtube.svg" alt="" srcset=""></a>
-                    <a target="_blank" href="mailto:nutricarolvarela@gmail.com">
-                        <img src="./assets/icons/email.svg" alt="" srcset="">
-                    </a>
-                </div>
-                <div id="links-container">
-                    <a target="_blank" class="link-card" href="https://wa.me/5521964226923?text=Ol%c3%a1!%20Gostaria%20de%20mais%20informa%c3%a7%c3%b5es%20sobre%20o%20acompanhamento%20nutricional!%20(%3a" id="link1">
-                        <div id="card1">
-                            Agende sua consulta
-                        </div>
-                    </a>
-                    <a target="_blank" class="link-card" href="https://m.youtube.com/@nutricarolvarela" id="link2">
-                        <div id="card2">
-                            Canal no Youtube
-                        </div>
-                    </a>
-                    <a target="_blank" class="link-card disabled" id="link3">
-                        <div id="card3">
-                            Site <span>(em breve)</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </main>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="Carol Varela — Nutricionista, início da página">
+        <picture>
+          <source type="image/webp" srcset="assets/img/logo-header.webp">
+          <img src="assets/img/logo-header.png" alt="Carolina Varela — Nutricionista" width="900" height="123">
+        </picture>
+      </a>
+      <a class="btn btn--sm" href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+acompanhamento+nutricional%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg>
+        <span>WhatsApp</span>
+      </a>
     </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="topo" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Acompanhamento Nutricional</p>
+          <h1 id="hero-titulo">A sua mudança começa aqui.</h1>
+          <p class="lead">Se você já tentou mil vezes, ou nunca soube por onde começar, esse é o passo em direção à constância.</p>
+          <p>Nada de fórmulas prontas ou planos que não conversam com a sua rotina.</p>
+          <p>Aqui, o acompanhamento leva em conta os seus horários, suas preferências, seus desafios. Com escuta de verdade, estratégia e ajustes contínuos, você finalmente encontra um caminho possível de seguir — e de sustentar.</p>
+          <div class="cta-block">
+            <a class="btn btn--lg" data-cta="hero" href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+acompanhamento+nutricional%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg>
+              <span>Quero começar meu acompanhamento</span>
+            </a>
+            <p class="cta-note">Ao clicar, a conversa abre no WhatsApp para conversarmos sobre a melhor opção para você.</p>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img class="hero-mark" src="assets/img/simbolo-navy.png" alt="" width="374" height="324" aria-hidden="true">
+          <div class="arch">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 64rem) 480px, 88vw" srcset="assets/img/consultorio-480.webp 480w, assets/img/consultorio-800.webp 800w, assets/img/consultorio-960.webp 960w">
+              <img src="assets/img/consultorio-800.jpg" srcset="assets/img/consultorio-480.jpg 480w, assets/img/consultorio-800.jpg 800w, assets/img/consultorio-960.jpg 960w" sizes="(min-width: 64rem) 480px, 88vw" alt="Consultório da nutricionista Carol Varela, com mesa de madeira, cadeiras claras e luz natural" width="960" height="1280" fetchpriority="high">
+            </picture>
+          </div>
+          <figcaption class="place">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#pin"/></svg>
+            <span><strong>Barra Olímpica, Rio de Janeiro</strong>Presencial e on-line</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CMT -->
+    <section class="cmt on-dark" id="cmt" aria-labelledby="cmt-titulo">
+      <div class="container cmt-grid">
+        <div class="cmt-copy" data-reveal>
+          <img class="cmt-mark" src="assets/img/cmt-logo.svg" alt="" width="800" height="694" aria-hidden="true">
+          <p class="eyebrow">Programa Nutricional</p>
+          <h2 id="cmt-titulo">Comer, Mover, Transformar <span class="nowrap">(CMT)</span></h2>
+          <p class="lead">O CMT é um programa intensivo de 4 encontros, criado pra quem quer emagrecer de forma consistente, romper o ciclo de tentativas e viver uma transformação.</p>
+          <p>Aqui, o foco é no comportamento: o que te trava, o que te impulsiona e o que realmente te sustenta no processo.</p>
+          <p>Essa é uma viagem com destino ao seu objetivo, e cada fase te aproxima do corpo e da relação com a comida que você quer (e pode) construir.</p>
+
+          <ol class="phases" aria-label="Fases da jornada">
+            <li><span>01</span>A Partida</li>
+            <li><span>02</span>A Descoberta</li>
+            <li><span>03</span>A Chegada</li>
+          </ol>
+
+          <div class="cta-block">
+            <a class="btn btn--light btn--lg" data-cta="cmt" href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+programa+Comer%2C+Mover%2C+Transformar+%28CMT%29%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg>
+              <span>Quero conhecer o CMT</span>
+            </a>
+            <p class="cta-note">Ao clicar, a conversa abre no WhatsApp para entendermos se o programa faz sentido para o seu momento.</p>
+          </div>
+        </div>
+
+        <div class="cmt-media" data-reveal>
+          <ul class="cmt-gallery" tabindex="0" aria-label="Fotos do Passaporte Nutricional do programa CMT">
+            <li class="shot shot--cover">
+              <picture>
+                <source type="image/webp" sizes="(min-width: 64rem) 300px, 78vw" srcset="assets/img/cmt-passaporte-480.webp 480w, assets/img/cmt-passaporte-864.webp 864w">
+                <img src="assets/img/cmt-passaporte-864.jpg" srcset="assets/img/cmt-passaporte-480.jpg 480w, assets/img/cmt-passaporte-864.jpg 864w" sizes="(min-width: 64rem) 300px, 78vw" alt="Capa azul-marinho do Passaporte Nutricional CMT, com o símbolo em laranja" width="864" height="768" loading="lazy">
+              </picture>
+            </li>
+            <li class="shot shot--open">
+              <picture>
+                <source type="image/webp" sizes="(min-width: 64rem) 300px, 78vw" srcset="assets/img/cmt-aberto-480.webp 480w, assets/img/cmt-aberto-768.webp 768w">
+                <img src="assets/img/cmt-aberto-768.jpg" srcset="assets/img/cmt-aberto-480.jpg 480w, assets/img/cmt-aberto-768.jpg 768w" sizes="(min-width: 64rem) 300px, 78vw" alt="Passaporte aberto na fase 1, A Partida, com o carimbo de um avião decolando" width="768" height="911" loading="lazy">
+              </picture>
+            </li>
+            <li class="shot shot--map">
+              <picture>
+                <source type="image/webp" sizes="(min-width: 64rem) 300px, 78vw" srcset="assets/img/cmt-mapa-480.webp 480w, assets/img/cmt-mapa-960.webp 960w">
+                <img src="assets/img/cmt-mapa-960.jpg" srcset="assets/img/cmt-mapa-480.jpg 480w, assets/img/cmt-mapa-960.jpg 960w" sizes="(min-width: 64rem) 300px, 78vw" alt="Mapa da jornada nutricional no passaporte, com os carimbos de cada fase" width="960" height="1280" loading="lazy">
+              </picture>
+            </li>
+            <li class="shot shot--data">
+              <picture>
+                <source type="image/webp" sizes="(min-width: 64rem) 300px, 78vw" srcset="assets/img/cmt-dados-480.webp 480w, assets/img/cmt-dados-900.webp 900w">
+                <img src="assets/img/cmt-dados-900.jpg" srcset="assets/img/cmt-dados-480.jpg 480w, assets/img/cmt-dados-900.jpg 900w" sizes="(min-width: 64rem) 300px, 78vw" alt="Página de dados do passaporte, com o nome da nutricionista e o programa nutricional C.M.T." width="900" height="1600" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="reviews" id="depoimentos" aria-labelledby="depoimentos-titulo">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Avaliações</p>
+          <h2 id="depoimentos-titulo">Eles decidiram fazer diferente</h2>
+          <p class="lead">Depoimentos de quem escolheu se colocar em primeiro lugar.</p>
+        </header>
+
+        <div class="reviews-widget" id="reviews-widget" data-src="data/reviews.json" hidden></div>
+
+        <noscript>
+          <p class="reviews-fallback"><a class="link-arrow" href="https://share.google/rhQ1G3dLco5bFbjpc" target="_blank" rel="noopener">Ver avaliações no Google</a></p>
+        </noscript>
+
+        <p class="reviews-close" data-reveal>Você também pode fazer diferente. <span>Quando o plano se encaixa, o cuidado se sustenta.</span></p>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container about-grid">
+        <figure class="about-media" data-reveal>
+          <div class="arch">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 64rem) 460px, 88vw" srcset="assets/img/sobre-480.webp 480w, assets/img/sobre-800.webp 800w, assets/img/sobre-1068.webp 1068w">
+              <img src="assets/img/sobre-800.jpg" srcset="assets/img/sobre-480.jpg 480w, assets/img/sobre-800.jpg 800w, assets/img/sobre-1068.jpg 1068w" sizes="(min-width: 64rem) 460px, 88vw" alt="Carol Varela, nutricionista, sorrindo sentada em um banco alto, vestida de branco" width="1068" height="1600" loading="lazy">
+            </picture>
+          </div>
+        </figure>
+
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">Sobre mim</p>
+          <h2 id="sobre-titulo">Carol Varela</h2>
+          <p class="lead"><strong>Carol Varela</strong> é nutricionista esportiva e estética com abordagem comportamental, graduada pela Universidade Federal do Rio de Janeiro (UFRJ) e certificada pela International Society of Sports Nutrition (ISSN). Atua com foco em emagrecimento, recomposição corporal e construção de uma rotina alimentar possível de manter, mesmo com dias corridos, imprevistos ou recaídas.</p>
+          <p>Sua história com a nutrição começou ainda na adolescência, quando percebeu que alimentação não era só sobre “comer certo”, mas sobre organização, autoconhecimento e escolhas consistentes. Desde então, construiu uma trajetória baseada em escuta, estratégia e transformação, com planos que funcionam na prática e se adaptam à realidade de cada paciente.</p>
+          <p>Hoje, Carol atende pessoas que já tentaram diferentes métodos, mas ainda não haviam encontrado um acompanhamento que respeitasse suas fases, acelerasse o que é possível e sustentasse o que é necessário.</p>
+          <p>Ela é criadora do programa <strong>Comer, Mover, Transformar (CMT)</strong>, uma metodologia exclusiva que combina acompanhamento técnico, comportamento e estratégias práticas de evolução. Além do CMT, também oferece consultas e planos de acompanhamento, para que cada pessoa encontre um formato que faça sentido para o seu momento e objetivos.</p>
+
+          <dl class="facts">
+            <div><dt>Formação</dt><dd>UFRJ</dd></div>
+            <div><dt>Certificação</dt><dd>ISSN</dd></div>
+            <div><dt>Foco</dt><dd>Emagrecimento e recomposição corporal</dd></div>
+          </dl>
+
+          <div class="cta-block">
+            <a class="btn btn--lg" data-cta="sobre" href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%2C+Carol%21+Gostaria+de+tirar+algumas+d%C3%BAvidas%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg>
+              <span>Falar com a Carol no WhatsApp</span>
+            </a>
+            <p class="cta-note">Ao clicar, a conversa abre no WhatsApp para você tirar suas dúvidas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="duvidas" aria-labelledby="faq-titulo">
+      <div class="container faq-grid">
+        <div class="faq-head" data-reveal>
+          <p class="eyebrow">Dúvidas</p>
+          <h2 id="faq-titulo">Perguntas frequentes</h2>
+        </div>
+
+        <figure class="faq-photo" data-reveal>
+          <div class="arch">
+            <picture>
+              <source type="image/webp" sizes="(min-width: 64rem) 340px, 70vw" srcset="assets/img/perfil-480.webp 480w, assets/img/perfil-800.webp 800w">
+              <img src="assets/img/perfil-800.jpg" srcset="assets/img/perfil-480.jpg 480w, assets/img/perfil-800.jpg 800w" sizes="(min-width: 64rem) 340px, 70vw" alt="Retrato de Carol Varela, nutricionista, de blazer claro, com livros de nutrição sobre a mesa" width="800" height="1000" loading="lazy">
+            </picture>
+          </div>
+        </figure>
+
+        <div class="faq-list" data-reveal>
+          <details>
+            <summary>O atendimento é presencial ou on-line?<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#down"/></svg></summary>
+            <p>As duas modalidades estão disponíveis. Os atendimentos presenciais acontecem na Barra Olímpica, no Rio de Janeiro, e o acompanhamento on-line permite que você seja atendido de onde estiver.</p>
+          </details>
+          <details>
+            <summary>Como funciona a avaliação física?<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#down"/></svg></summary>
+            <p>A avaliação física é feita tanto na consulta presencial, quanto on-line. Na modalidade presencial, fazemos bioimpedância, dobras cutâneas, medidas e fotos. Na modalidade on-line, fazemos um escaneamento corporal pelo Shaped, além de medidas e fotos.</p>
+          </details>
+          <details>
+            <summary>Vou ter acompanhamento entre as consultas?<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#down"/></svg></summary>
+            <p>Nos planos de acompanhamento, os check-ins permitem observar sua evolução, identificar dificuldades e orientar ajustes quando necessário. As condições dependem da modalidade escolhida.</p>
+          </details>
+          <details>
+            <summary>Você atende por plano de saúde?<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#down"/></svg></summary>
+            <p>Para oferecer uma consulta completa, individualizada e com o tempo e a atenção que cada paciente merece, meus atendimentos são particulares, sem atendimento direto por convênios. É possível solicitar recibo e documentação pertinente para avaliar o reembolso com a sua operadora, conforme as regras do seu plano.</p>
+          </details>
+          <details>
+            <summary>Como posso saber qual modalidade é mais adequada para mim?<svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#down"/></svg></summary>
+            <p>Basta entrar em contato pelo WhatsApp. Conversaremos sobre seu objetivo e apresentarei as opções de atendimento, funcionamento e investimento.</p>
+          </details>
+
+          <div class="cta-block">
+            <a class="btn btn--lg" data-cta="duvidas" href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%2C+Carol%21+Gostaria+de+tirar+algumas+d%C3%BAvidas%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg>
+              <span>Falar com a Carol no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container footer-inner">
+      <img class="footer-logo" src="assets/img/logo-empilhado-claro.png" alt="Carolina Varela — Nutricionista" width="900" height="390" loading="lazy">
+      <p class="footer-id">Carolina Varela — Nutricionista CRN-4 23100787</p>
+      <ul class="social" aria-label="Redes e contato">
+        <li><a href="https://www.instagram.com/nutricarolvarela" target="_blank" rel="noopener" aria-label="Instagram da Carol Varela"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#instagram"/></svg></a></li>
+        <li><a href="https://www.youtube.com/@nutricarolvarela" target="_blank" rel="noopener" aria-label="Canal da Carol Varela no YouTube"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#youtube"/></svg></a></li>
+        <li><a href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+acompanhamento+nutricional%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp da Carol Varela"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg></a></li>
+      </ul>
+      <p class="footer-motto">Constância é estar em movimento</p>
+    </div>
+  </footer>
+
+  <a class="fab" id="fab" href="https://api.whatsapp.com/send/?phone=5521964226923&amp;text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+acompanhamento+nutricional%21+%28%3A&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" hidden>
+    <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#whatsapp"/></svg>
+    <span>Falar no WhatsApp</span>
+  </a>
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/reviews.js"></script>
 </body>
 </html>
