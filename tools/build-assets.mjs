@@ -28,17 +28,30 @@ for (const f of fs.readdirSync(fontsSrc).filter((n) => n.endsWith('.otf'))) {
 const photos = {
   consultorio: { file: 'nutri-carol-varela-consultorio.jfif', widths: [480, 800, 960] },
   sobre: { file: 'nutri-carol-varela-foto-branca.jfif', widths: [480, 800, 1068] },
-  perfil: { file: 'nutri-carol-varela-perfil.jfif', widths: [480, 800] },
+  // crop (fractions of the image): zoom so only the top of the books shows, not their titles
+  perfil: { file: 'nutri-carol-varela-perfil.jfif', widths: [480, 608], crop: { left: 0.1575, top: 0.084, width: 0.76, height: 0.76 } },
   'cmt-passaporte': { file: 'passaporte-CMT-fechado.jpg', widths: [480, 864] },
   'cmt-aberto': { file: 'passaporte-CMT.jpg', widths: [480, 768] },
-  'cmt-dados': { file: 'passaporte-CMT-dados.jfif', widths: [480, 900] },
   'cmt-mapa': { file: 'passaporte-CMT-mapa.jfif', widths: [480, 960] },
 };
 
-for (const [slug, { file, widths }] of Object.entries(photos)) {
+for (const [slug, { file, widths, crop }] of Object.entries(photos)) {
   const src = path.join(imgSrc, file);
+  let input = src;
+  if (crop) {
+    const oriented = await sharp(src).rotate().toBuffer();
+    const { width, height } = await sharp(oriented).metadata();
+    input = await sharp(oriented)
+      .extract({
+        left: Math.round(crop.left * width),
+        top: Math.round(crop.top * height),
+        width: Math.round(crop.width * width),
+        height: Math.round(crop.height * height),
+      })
+      .toBuffer();
+  }
   for (const w of widths) {
-    const base = sharp(src).rotate().resize({ width: w, withoutEnlargement: true });
+    const base = sharp(input).rotate().resize({ width: w, withoutEnlargement: true });
     await base.clone().jpeg({ quality: 82, progressive: true, mozjpeg: true }).toFile(out('assets/img', `${slug}-${w}.jpg`));
     await base.clone().webp({ quality: 80 }).toFile(out('assets/img', `${slug}-${w}.webp`));
   }

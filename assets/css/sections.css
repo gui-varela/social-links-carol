@@ -235,10 +235,6 @@ h2 {
   object-position: 50% 72%;
 }
 
-.shot--data img {
-  object-position: 50% 88%;
-}
-
 @media (min-width: 64rem) {
   .cmt-grid {
     grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
@@ -274,10 +270,6 @@ h2 {
     aspect-ratio: 4 / 5;
   }
 
-  .shot--data {
-    aspect-ratio: 1;
-    transform: translateY(3.5rem);
-  }
 }
 
 /* ---------- Depoimentos ---------- */
